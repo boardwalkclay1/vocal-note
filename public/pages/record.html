@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocal Note — Record</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#050816" />
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Record</h1>
+  </header>
+
+  <main class="main">
+    <section class="record-box">
+      <div id="recordStatus">Idle</div>
+
+      <button id="recordBtn" class="primary">Start Recording</button>
+      <button id="darkModeBtn" class="ghost">Dark Recording Mode</button>
+    </section>
+  </main>
+
+  <div id="darkOverlay">
+    <div class="record-dot"></div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="notes.html" class="nav-btn">Notes</a>
+    <a href="record.html" class="nav-btn active">Record</a>
+    <a href="study.html" class="nav-btn">Study</a>
+    <a href="courses.html" class="nav-btn">Courses</a>
+    <a href="calendar.html" class="nav-btn">Calendar</a>
+    <a href="settings.html" class="nav-btn">Settings</a>
+  </nav>
+
+  <script src="../assets/js/record.js"></script>
+</body>
+</html>
