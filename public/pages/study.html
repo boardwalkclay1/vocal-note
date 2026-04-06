@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocal Note — Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="manifest" href="../manifest.webmanifest" />
+  <meta name="theme-color" content="#050816" />
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <header class="top-bar">
+    <h1>Study Mode</h1>
+  </header>
+
+  <main class="main">
+    <section class="study-options">
+      <button class="primary" id="studySheetBtn">Generate Study Sheet</button>
+      <button class="primary" id="flashcardsBtn">Flashcards</button>
+      <button class="primary" id="quizBtn">Quiz Me</button>
+      <button class="primary" id="conceptMapBtn">Concept Map</button>
+    </section>
+
+    <section id="studyOutput" class="study-output">
+      <!-- AI-generated study content -->
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="notes.html" class="nav-btn">Notes</a>
+    <a href="record.html" class="nav-btn">Record</a>
+    <a href="study.html" class="nav-btn active">Study</a>
+    <a href="courses.html" class="nav-btn">Courses</a>
+    <a href="calendar.html" class="nav-btn">Calendar</a>
+    <a href="settings.html" class="nav-btn">Settings</a>
+  </nav>
+
+  <script src="../assets/js/study.js"></script>
+</body>
+</html>
