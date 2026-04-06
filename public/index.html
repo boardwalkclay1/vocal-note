@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocal Note</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- PWA basics -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#050816" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png" />
+
+  <!-- iOS / home screen icon -->
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Vocal Note" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Vocal Note" />
+  <meta property="og:description" content="Listen to lectures, auto-generate notes, and study smarter." />
+  <meta property="og:image" content="icons/social-preview.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <h1>Vocal Note</h1>
+    </header>
+
+    <main class="main">
+      <section class="current-lecture">
+        <h2>Current lecture</h2>
+        <div id="status">Idle</div>
+        <button id="recordBtn" class="primary">Start recording</button>
+        <button id="darkModeBtn" class="ghost">Dark recording screen</button>
+      </section>
+
+      <section class="notes-section">
+        <h2>Notes</h2>
+        <textarea id="notesArea" placeholder="Your generated notes will appear here..."></textarea>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active">Notes</button>
+      <button class="nav-btn">Courses</button>
+      <button class="nav-btn">Settings</button>
+    </nav>
+  </div>
+
+  <!-- Dark recording overlay -->
+  <div id="darkOverlay">
+    <div class="record-dot"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
