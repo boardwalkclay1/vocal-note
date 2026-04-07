@@ -50,9 +50,7 @@ function openDay(dateStr) {
 
   eventsList.innerHTML = `
     <h4>${dateStr}</h4>
-    ${dayEvents
-      .map(e => `<div class="event">${e.title}</div>`)
-      .join("")}
+    ${dayEvents.map(e => `<div class="event">${e.title}</div>`).join("")}
     <button class="primary" id="addEventBtn">Add Event</button>
   `;
 
