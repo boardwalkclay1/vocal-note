@@ -19,7 +19,7 @@ function renderNotes() {
     div.innerHTML = `
       <h3>${note.title}</h3>
       <p>${note.preview}</p>
-      <small>${formatDate(new Date(note.updated))}</small>
+      <small>${formatDate(note.updated)}</small>
     `;
     div.onclick = () => openNote(note.id);
     notesContainer.appendChild(div);
