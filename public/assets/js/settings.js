@@ -1,4 +1,4 @@
-import { save, load } from "./app.js";
+import { save } from "./app.js";
 
 const themeButtons = document.querySelectorAll(".settings-section button");
 
