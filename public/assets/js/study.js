@@ -36,16 +36,11 @@ quizBtn.onclick = () => {
 
   studyOutput.innerHTML = `
     <h2>Quiz</h2>
-    ${lines
-      .slice(0, 5)
-      .map(
-        (l, i) => `
+    ${lines.slice(0, 5).map((l, i) => `
       <div class="quiz-question">
         <strong>Q${i + 1}:</strong> ${l.trim()}?
       </div>
-    `
-      )
-      .join("")}
+    `).join("")}
   `;
 };
 
